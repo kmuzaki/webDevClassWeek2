@@ -14,6 +14,8 @@ function greetByTime() {
     }
 }
 
+mktime(0,0,0,0,0,0);
+
 ?>
 
 <!DOCTYPE html>
@@ -26,5 +28,6 @@ function greetByTime() {
 <body>
     <h1> <?php echo greet("Mr. Freeman") ?> </h1>
     <h2> <?php echo "The time is " . date("h:i:sa") ?> </h2>
+    <p> <?php echo date("1") . " " . mktime(0,0,0,7,28,2000) ?> </p>
 </body>
 </html>
