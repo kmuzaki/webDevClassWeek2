@@ -28,6 +28,11 @@ mktime(0,0,0,0,0,0);
 <body>
     <h1> <?php echo greet("Mr. Freeman") ?> </h1>
     <h2> <?php echo "The time is " . date("h:i:sa") ?> </h2>
-    <p> <?php echo date("1") . " " . mktime(0,0,0,7,28,2000) ?> </p>
+    <p> 
+        <?php echo date("l", mktime(0,0,0,9,8,2025)); ?> <br>
+        <?php 
+        echo "Today is ". date("l", mktime(0,0,0,9,8,2025));
+        ?> 
+    </p>
 </body>
 </html>
