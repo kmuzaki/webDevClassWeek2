@@ -44,9 +44,9 @@ $rides = [
     <ul>
         <?php foreach($rides as $ride) : ?>
             <li>
-                <a href="ridesListDetail.php?name=<?php echo $ride["name"]; ?>
-                        &rideNumber=<?php echo $ride["rideNumber"]; ?>
-                        &category=<?php echo $ride["category"]; ?>
+                <a href="ridesListDetail.php?name=<?php echo "<b> Ride name: </b>" . $ride["name"]; ?>
+                        &rideNumber=<?php echo "<b> Ride number: </b>" . $ride["rideNumber"]; ?>
+                        &category=<?php echo "<b> Category: </b>" . $ride["category"]; ?>
                         &img=<?php echo $ride["img"]; ?>">
                         <?php echo $ride["name"]; ?>
                 </a>
