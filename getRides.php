@@ -44,7 +44,7 @@ $rides = [
     <ul>
         <?php foreach($rides as $ride) : ?>
             <li>
-                <a href="associativeArray.php?name=<?php echo $ride["name"]; ?>
+                <a href="ridesListDetail.php?name=<?php echo $ride["name"]; ?>
                         &rideNumber=<?php echo $ride["rideNumber"]; ?>
                         &category=<?php echo $ride["category"]; ?>
                         &img=<?php echo $ride["img"]; ?>">
